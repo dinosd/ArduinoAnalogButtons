@@ -19,6 +19,9 @@
 
 AnalogButtons buttons(VOLTAGE,PULLDOWNRES,A0);
 
+// you can use the default values and declare the instance as
+// AnalogButtons buttons(A0);  // you pass only the analog pin input
+
 
 void setup()
 {
