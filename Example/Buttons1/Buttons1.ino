@@ -13,14 +13,12 @@
 
 #include <CDButton.h>
 
-#define VOLTAGE 5.0
+#define VOLTAGE 5.0   //default is 5.0
 #define ANALOGPIN A0
-#define PULLDOWNRES 10000    // R10K
+#define PULLDOWNRES 10000    // default is 10000 = R10K
 
-AnalogButtons buttons(VOLTAGE,PULLDOWNRES,A0);
-
-// you can use the default values and declare the instance as
-// AnalogButtons buttons(A0);  // you pass only the analog pin input
+AnalogButtons buttons(VOLTAGE,PULLDOWNRES,A0);  // or
+//AnalogButtons buttons(A0);
 
 
 void setup()
@@ -28,7 +26,7 @@ void setup()
   Serial.begin(57600);
   
   buttons.onButtonPush=button_onButtonPush;          // call back when a button pressed passing button id as parameter
-  buttons.onButtonRelease = button_onButtonRelease;  // call back when a button released passing button id as parameter
+  buttons.onButtonRelease=button_onButtonRelease;  // call back when a button released passing button id as parameter
   buttons.addButton(1,1000);   // button id=1 resistor=R1K
   buttons.addButton(2,2200);   // button id=2 resistor=2R2K
   buttons.addButton(3,4700);   // button id=3 resistor=4R7K
