@@ -4,7 +4,7 @@ ArduinoAnalogButtons
 Library for arduino analog buttons
 
 Installation
-1. Create a folder under <arduino home>\libraries named CDButtons
+1. Create a folder under <arduino home>\libraries named CDButton
 2. Copy the contents of the zip file into the above folder
 
 If you are missing digital inputs for buttons then you may need another approach.
