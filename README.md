@@ -10,6 +10,7 @@ USE ANALOG Input with some resistors
 Schema for connections
 
 //    5V -----[Button]-------- [Resistor] ----------------- ANALOG PIN   --------- [Pulldown Resistor] ------- GROUND
+
 //                                                        | 
 //    5V -----[Button]-------- [Resistor] ----------------- 
 //                                                        | 
