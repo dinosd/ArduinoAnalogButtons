@@ -42,12 +42,15 @@ void AnalogButtons::loop()
    int comp=ANALOGMAX;
    for (int i=1;i<=MAXBUTTONS;i++)
    {
-	   int diff = abs(v-buttons[i].voltage);
-	   if (diff<comp)
-       {
-          comp = diff;
-          smallest = buttons[i].id;
-       }
+	   if (buttons[id])
+	   {
+		   int diff = abs(v-buttons[i].voltage);
+		   if (diff<comp)
+		   {
+			  comp = diff;
+			  smallest = buttons[i].id;
+		   }
+	   }
    }
    if (smallest)
    {
