@@ -33,7 +33,7 @@ void AnalogButtons::loop()
 	   prev_button = 0;
 	   if (p)
 	   {
-		   if (!onButtonPush==NULL) (onButtonRelease)(p);
+		   if (!onButtonRelease==NULL) (onButtonRelease)(p);
 	   }
 	   return;
    }
