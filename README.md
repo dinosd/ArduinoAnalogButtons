@@ -35,10 +35,6 @@ Installation
 2. Copy the contents of the zip file into the above folder
 
 
-If you are missing digital inputs for buttons then you may need another approach.
-
-USE ANALOG Input with some resistors
-
 Schema for connections
 
 //    5V -----[Button]-------- [Resistor] ----------------- ANALOG PIN   --------- [Pulldown Resistor] ------- GROUND
