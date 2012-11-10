@@ -33,7 +33,7 @@ void setup()
   buttons.addButton(2,2200);   // button id=2 resistor=2R2K
   buttons.addButton(3,4700);   // button id=3 resistor=4R7K
   buttons.addButton(4,10000);  // button id=4 resistor=R10K
-  buttons.addButton(5,220);    // button id=5 resistor=R100
+  buttons.addButton(5,220);    // button id=5 resistor=R220
   
 }
 
